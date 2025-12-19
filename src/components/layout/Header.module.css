@@ -18,11 +18,12 @@
 }
 
 .logo {
-    font-family: var(--font-outfit);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-text-main);
-    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    object-fit: contain;
 }
 
 .nav {

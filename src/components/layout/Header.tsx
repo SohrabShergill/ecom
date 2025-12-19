@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Search, ShoppingBag, User } from 'lucide-react';
 import { Container } from '../ui/Container';
 import styles from './Header.module.css';
@@ -9,7 +10,14 @@ export const Header = () => {
             <Container className={styles.container}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        Petitsamy
+                        <Image
+                            src="/images/logo.png"
+                            alt="Petitsamy Logo"
+                            width={140}
+                            height={70}
+                            className={styles.logoImage}
+                            priority
+                        />
                     </Link>
                 </div>
 
