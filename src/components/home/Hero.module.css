@@ -1,0 +1,66 @@
+.hero {
+    background: linear-gradient(135deg, #FDFBF7 0%, #FCE4EC 100%);
+    /* Cream to very light pink */
+    padding: 4rem 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative circle */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-secondary);
+    opacity: 0.1;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-main);
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        min-height: 700px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+}
